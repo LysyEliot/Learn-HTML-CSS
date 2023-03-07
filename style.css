@@ -147,6 +147,35 @@ nav ul li a:hover {
   padding: 50px;
 }
 .contact_contact {
+  margin-top: 24px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+.form{
+
+
+}
+input[type=text]{
+  padding: 8px;
+  width:400px;
+  margin-bottom: 16px;
+}
+textarea{
+  padding: 8px;
+  width:400px;
+  height: 300px;
+  resize: none;
+
+}
+.contact_button{
+  width:415px;
+  padding: 6px;
+  margin-top :10px;
+
+}
+.map_img{
+  width: 40%;
+  height: 40%;
+}
+
+
