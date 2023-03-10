@@ -42,7 +42,7 @@ nav ul li a:hover {
 
   padding: 50px;
   color: #F2F2F2;
-  justify-content: left;
+  justify-content: center;
   text-align: center;
 
 
@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .main_button {
-  margin-top: 34px;
+  margin-top: 24px;
   padding: 20px;
   width: 260px;
   font-weight: bold;
@@ -108,7 +108,7 @@ nav ul li a:hover {
   justify-content: center;
   display: block;
   background-color: #262626;
-  margin-bottom: 20px;
+  
 
 }
 .about_content {
@@ -120,14 +120,10 @@ nav ul li a:hover {
   padding: 36px;
   font-size: 20px;
 }
-.about_text ul{
- 
- 
 
-}
 .about_text ul li{
   padding: 10px;
-  list-style-type:circle;
+  list-style-type: style type;;
 
 }
 
@@ -139,7 +135,7 @@ height: 25%;
 
 .services {
   background-color: #262626;
-  margin-bottom: 20px;
+  
   text-align: center;
   padding: 50px;
 }
@@ -148,7 +144,7 @@ height: 25%;
   color: #F2F2F2;
   background-color: #8C2323;
   padding: 24px;
-  margin-bottom: none;
+  margin: 0;
   text-align: center;
 }
 
@@ -177,8 +173,6 @@ height: 25%;
 
 }
 
-
-
 .device_img {
   width: 180px;
   height: 180px;
@@ -188,45 +182,87 @@ height: 25%;
 
 .contact {
   background-color: #262626;
-  margin-bottom: 24px;
   text-align: center;
-  padding-bottom: 40px;
   padding: 50px;
 }
+.data{
+padding: 16px;
+font-size: 24px;
+}
+.data h3{
+  background-color: #8C2323;
+  padding: 10px;
+  margin:0;
+  font-size: 26px;
+}
+
+.detail_data{
+  display:flex;
+  padding: 10px;
+}
+
 
 .contact_contact {
   margin-top: 24px;
   display: flex;
   justify-content: space-evenly;
 }
+.contact_contact img{
+  padding:  15px;
+  width: 50px;
+  height:50px;
+}
 
-.form {}
+
+
 
 input[type=text] {
+  color: #F2F2F2;
   padding: 8px;
   width: 400px;
   margin-bottom: 16px;
+  background-color:rgb(53, 53, 53);
+  border: none;
+  
 }
 
 textarea {
+  color: #F2F2F2;
   padding: 8px;
   width: 400px;
-  height: 300px;
+  height: 200px;
   resize: none;
+  border: none;
+  background-color:rgb(53, 53, 53)
 
 }
 
 .contact_button {
   width: 415px;
-  padding: 6px;
+  padding: 10px;
   margin-top: 10px;
+  background-color: #8C2323;
+  border:none;
+  border-radius: 6px;
+  font-family: "Rubik", sans-serif ;
+  color: #F2F2F2;
+  font-size: large;
+  font-weight: 400;
 
 }
-
-.map_img {
-  width: 40%;
-  height: 40%;
+.contact_button:hover{
+  background-color: #F23D3D;
+  cursor: pointer;
 }
+
+#footer{
+display: block;
+text-align: center;
+background-color: #1b1b1b;
+padding :50px;
+ 
+}
+
 
 
 /* Color Theme Swatches in Hex 
