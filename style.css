@@ -5,7 +5,7 @@ body {
   font-family: "Rubik", sans-serif;
   color: antiquewhite;
   margin: 0;
-  display:block;
+  display: block;
 
 }
 
@@ -135,8 +135,6 @@ header ul li a:hover {
 
 /* ---------------about section---------------*/
 .about {
-  justify-content: center;
-  display: block;
   background-color: #262626;
 }
 
@@ -147,12 +145,23 @@ header ul li a:hover {
 }
 
 .about_text {
-  padding: 36px;
-  font-size: 20px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.about_text p {
+  margin-top: 10px;
+}
+
+.about_text ul {
+  margin-top: 36px;
+
 }
 
 .about_text ul li {
-  padding: 10px;
+  font-size: 20px;
+  padding: 2px;
+  margin-bottom: 10px;
   list-style-type: none;
 }
 
@@ -176,17 +185,17 @@ header ul li a:hover {
   background-color: #262626;
   text-align: center;
 }
+
 .contact_continer {
   padding: 24px 0;
   display: flex;
   justify-content: center;
+  vertical-align: middle;
 }
 
 .contact_details {
-  font-size: 24px;
- 
-  
-  
+  font-size: 22px;
+
 }
 
 .contact_details h3 {
@@ -198,13 +207,13 @@ header ul li a:hover {
 
 .contact_details ul {
   list-style-type: none;
+
 }
-.contact_details ul li{
+
+.contact_details ul li {
   display: flex;
+
 }
-
-
-
 
 .contact_continer img {
   padding: 15px;
@@ -222,6 +231,7 @@ input[type=text] {
   margin-bottom: 16px;
   background-color: rgb(53, 53, 53);
   border: none;
+  font-family: "Rubik", sans-serif;
 
 }
 
@@ -232,7 +242,8 @@ textarea {
   height: 200px;
   resize: none;
   border: none;
-  background-color: rgb(53, 53, 53)
+  background-color: rgb(53, 53, 53);
+  font-family: "Rubik", sans-serif;
 }
 
 .contact_button {
@@ -246,15 +257,17 @@ textarea {
   color: #F2F2F2;
   font-size: large;
   font-weight: 400;
+  cursor: pointer;
 
 }
 
 .contact_button:hover {
   background-color: #F23D3D;
-  cursor: pointer;
+
 }
 
-#footer {
+/* ---------------footer---------------*/
+footer {
   display: block;
   text-align: center;
   background-color: #1b1b1b;
