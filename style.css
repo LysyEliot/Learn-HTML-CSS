@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
-
+*{
+  box-sizing: border-box;
+}
 body {
   background-color: #F2F2F2;
   font-family: "Rubik", sans-serif;
   color: antiquewhite;
   margin: 0;
   display: block;
+ 
 
 }
 
@@ -53,7 +56,7 @@ header ul li a:hover {
 /* ---------------banner section---------------*/
 
 .banner {
-  background-image: url(img/bg2.jpg);
+  background-image: url(img/bg3.jpg);
   background-size: cover;
   padding: 50px;
   color: #F2F2F2;
@@ -63,9 +66,14 @@ header ul li a:hover {
 
 .banner h1 {
   font-size: 72px;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
+  margin-bottom: 20px;
 }
+.banner h2{
+  text-align: center;
+}
+
 
 .banner_content {
   text-align: left;
@@ -146,11 +154,12 @@ header ul li a:hover {
 
 .about_text {
   font-size: 18px;
-  margin-top: 20px;
+  padding: 43px;
+  
 }
 
 .about_text p {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .about_text ul {
@@ -165,18 +174,11 @@ header ul li a:hover {
   list-style-type: none;
 }
 
-.ok_img {
-  width: 50px;
-  height: 50px;
-  vertical-align: middle;
-  margin-right: 20px;
-}
-
 .about_img {
-  padding: 36px;
   border-radius: 50%;
-  width: 25%;
-  height: 25%;
+  margin:20px 40px;
+  width: 250px;
+  height: 250px;
 }
 
 
@@ -184,17 +186,21 @@ header ul li a:hover {
 .contact {
   background-color: #262626;
   text-align: center;
+  vertical-align: middle;
 }
 
 .contact_continer {
   padding: 24px 0;
   display: flex;
-  justify-content: center;
-  vertical-align: middle;
+  justify-content: space-evenly;
+  align-items: center;
+   
 }
 
 .contact_details {
   font-size: 22px;
+  width: 50%;
+  margin: 0px 40px;
 
 }
 
@@ -202,32 +208,40 @@ header ul li a:hover {
   background-color: #8C2323;
   padding: 10px;
   margin: 0;
+  border-radius: 8px;
   font-size: 26px;
 }
 
 .contact_details ul {
   list-style-type: none;
+  text-align: center;
 
 }
 
-.contact_details ul li {
-  display: flex;
+.contact_details a {
+  text-decoration: none;
+  color:#F2F2F2;
+  display: block;
+  margin: 22px auto;
 
 }
 
 .contact_continer img {
-  padding: 15px;
+  padding: 2px;
+  vertical-align: top;
+  margin-right: 20px;
+  
   width: 40px;
   height: 40px;
 }
-
-
-
-
+form{
+  width: 50%;
+  margin: 0px 40px;
+}
 input[type=text] {
   color: #F2F2F2;
   padding: 8px;
-  width: 400px;
+  width: 100%;
   margin-bottom: 16px;
   background-color: rgb(53, 53, 53);
   border: none;
@@ -238,7 +252,7 @@ input[type=text] {
 textarea {
   color: #F2F2F2;
   padding: 8px;
-  width: 400px;
+  width: 100%;
   height: 200px;
   resize: none;
   border: none;
@@ -247,7 +261,7 @@ textarea {
 }
 
 .contact_button {
-  width: 415px;
+  width: 100%;
   padding: 10px;
   margin-top: 10px;
   background-color: #8C2323;
@@ -276,6 +290,85 @@ footer {
 }
 
 
+@media only screen and (max-width:700px) {
+
+.banner{
+  padding: 0;
+  margin: 0;
+
+}
+.banner_content{
+  padding: 10px;
+  margin: 0;
+}
+.contact_details ul{
+     padding: 20px;
+  
+}
+
+
+  .contact_details ul li {
+    display: inline-block;
+    align-items: center;
+  
+  }
+  .about_continer{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .about_img {
+  border-radius: 50%;
+  margin:20px auto;
+  }
+
+  
+
+  .contact {
+    background-color: #262626;
+    text-align: center;
+  }
+  
+  .contact_continer {
+    padding: 1px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+  }
+  
+  .contact_details {
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+   
+  
+  }
+  
+  .contact_details h3 {
+    background-color: #8C2323;
+    padding: 10px;
+    margin: 0;
+    font-size: 26px;
+  }
+  
+  form{
+        width: 90%;
+    margin: 0;
+    padding: 20px;
+  }
+  .contact_continer img {
+   
+    width: 20px;
+    height: 20px;
+  }
+  
+.about_img {
+
+}
+  
+  
+}
 
 /* Color Theme Swatches in Hex 
 .TheRealDeal-—-Research-&-Design-1-hex { color: #F27E3C; }
